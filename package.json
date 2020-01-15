@@ -16,6 +16,12 @@
 	"css custom properties",
 	"css variables"
   ],
+  "repository": {
+	"type" : "git",
+	"url" : "https://github.com/rogi29/easy-css-grid.git"
+  },
+  "homepage": "https://github.com/rogi29/easy-css-grid#readme",
+  "url" : "https://github.com/rogi29/easy-css-grid/issues",
   "author": "Gil Nimer",
   "license": "MIT"
 }
