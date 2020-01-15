@@ -1,27 +1,27 @@
 {
-  "name": "easy-css-grid",
-  "version": "0.1.0",
-  "description": "An easy-to-use CSS grid framework that is based on the `grid` CSS property and implemented using CSS Custom Properties.",
-  "main": "easy-css-grid.css",
-  "keywords": [
-	"easy",
-	"css",
-	"grid",
-	"display grid",
-	"grid system",
-	"grid framework",
-	"css grid system",
-	"css grid framework",
-	"css framework",
-	"css custom properties",
-	"css variables"
-  ],
-  "repository": {
-	"type" : "git",
-	"url" : "https://github.com/rogi29/easy-css-grid.git"
-  },
-  "homepage": "https://github.com/rogi29/easy-css-grid#readme",
-  "url" : "https://github.com/rogi29/easy-css-grid/issues",
-  "author": "Gil Nimer",
-  "license": "MIT"
+	"name": "easy-css-grid",
+	"version": "0.1.1",
+	"description": "An easy-to-use CSS grid framework that is based on the `grid` CSS property and implemented using CSS Custom Properties.",
+	"main": "easy-css-grid.css",
+	"keywords": [
+		"easy",
+		"css",
+		"grid",
+		"display grid",
+		"grid system",
+		"grid framework",
+		"css grid system",
+		"css grid framework",
+		"css framework",
+		"css custom properties",
+		"css variables"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rogi29/easy-css-grid.git"
+	},
+	"homepage": "https://github.com/rogi29/easy-css-grid#readme",
+	"url": "https://github.com/rogi29/easy-css-grid/issues",
+	"author": "Gil Nimer",
+	"license": "MIT"
 }
