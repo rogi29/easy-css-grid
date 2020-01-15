@@ -59,7 +59,8 @@ Import into your sass using `@import '~easy-css-grid/easy-css-grid';`
 
 
 ## Usage
-E.g.:
+E.g. [https://rogi29.github.io/easy-css-grid/index.html]() :
+
 ```css
 :root {
 	--Grid-columns: 3;
@@ -95,8 +96,7 @@ E.g.:
 	--column-position: 1;
 }
 
-.Grid .cell.col-position-second {
-	--column-position: 2;
+.Grid .cell.row-position-second {
 	--row-position: 2;
 }
 ```
@@ -105,8 +105,8 @@ E.g.:
 	<div class="cell">CELL</div>
 	<div class="cell">CELL</div>
 	<div class="cell">CELL</div>
-	<div class="cell col-position-second">CELL</div>
-	<div class="cell two-cols col-position-first">CELL</div>
+	<div class="cell">CELL</div>
+	<div class="cell two-cols col-position-first row-position-second">CELL</div>
 </div>
 
 <div class="Grid grid-of-four">
