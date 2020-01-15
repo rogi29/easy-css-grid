@@ -7,7 +7,7 @@ An easy-to-use CSS grid framework that is based on the `grid` CSS property and i
 `npm install easy-css-grid`  
 
 ### sass 
-Import into your sass using `@import '~easy-css-grid';`
+Import into your sass using `@import '~easy-css-grid'`
 
 
 ## Properties
