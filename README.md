@@ -59,7 +59,7 @@ Import into your sass using `@import '~easy-css-grid/easy-css-grid';`
 
 
 ## Usage
-E.g. [https://rogi29.github.io/easy-css-grid/index.html]() :
+E.g. [https://rogi29.github.io/easy-css-grid](https://rogi29.github.io/easy-css-grid) :
 
 ```css
 :root {
