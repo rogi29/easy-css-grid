@@ -40,17 +40,17 @@
 }
 
 .Grid .cell {
-	--column-position: var(--Grid-column-position);
-	--column-span: var(--Grid-column-span);
-	--column-start: var(--column-position);
-	--column-end: span var(--column-span);
-	--row-position: var(--Grid-row-position);
-	--row-span: var(--Grid-row-span);
-	--row-start: var(--row-position);
-	--row-end: span var(--row-span);
+  --column-position: var(--Grid-column-position);
+  --column-span: var(--Grid-column-span);
+  --column-start: var(--column-position);
+  --column-end: span var(--column-span);
+  --row-position: var(--Grid-row-position);
+  --row-span: var(--Grid-row-span);
+  --row-start: var(--row-position);
+  --row-end: span var(--row-span);
 
-	grid-column-start: var(--column-start);
-	grid-column-end: var(--column-end);
-	grid-row-start: var(--row-start);
-	grid-row-end: var(--row-end);
+  grid-column-start: var(--column-start);
+  grid-column-end: var(--column-end);
+  grid-row-start: var(--row-start);
+  grid-row-end: var(--row-end);
 }
