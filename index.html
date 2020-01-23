@@ -1,67 +1,85 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Easy CSS Grid - Test</title>
-        <meta name="description" content="Easy CSS Grid">
-        <meta name="author" content="Gil Nimer">
-        <link rel="stylesheet" href="easy-css-grid.css?v=0.1.0">
-        <style>
-            :root {
-                --Grid-columns: 3;
-                --Grid-gap: 10px;
-                --Grid-width: 1024px;
-                --Grid-rows-height: 100px;
-            }
+	<head>
+		<meta charset="utf-8">
+		<title>Easy CSS Grid - Test</title>
+		<meta name="description" content="Easy CSS Grid">
+		<meta name="author" content="Gil Nimer">
+		<link rel="stylesheet" href="easy-css-grid.css?v=1.0.0">
+		<style>
+			:root {
+				--Grid-columns: 3;
+				--Grid-gap: 10px;
+				--Grid-width: 1024px;
+				--Grid-rows-height: 100px;
+			}
 
-            .Grid {
-                margin: 10px auto;
-            }
+			.Grid {
+				margin: 10px auto;
+			}
 
-            .Grid.grid-of-four {
-                --columns: 4;
-                --rows: 4;
-            }
+			.Grid.grid-of-four {
+				--columns: 4;
+				--rows: 4;
+			}
 
-            .Grid .cell {
-                background: #ddd;
-                text-align: center;
-                line-height: 100px;
-            }
+			.Grid .cell {
+				background: #ddd;
+				font-family: Arial, Helvetica, sans-serif;
+				text-align: center;
+				line-height: 100px;
+			}
 
-            .Grid .cell.two-cols {
-                --column-span: 2;
-            }
+			.Grid .cell.two-cols {
+				--column-span: 2;
+			}
 
-            .Grid .cell.two-rows {
-                --row-span: 2;
-            }
+			.Grid .cell.two-rows {
+				--row-span: 2;
+			}
 
-            .Grid .cell.col-position-first {
-                --column-position: 1;
-            }
+			.Grid .cell.col-position-first {
+				--column-position: 1;
+			}
 
-            .Grid .cell.row-position-second {
-                --row-position: 2;
-            }
-        </style>
-    </head>
+			.Grid .cell.row-position-second {
+				--row-position: 2;
+			}
+		</style>
+	</head>
 
-    <body>
-        <div class="Grid">
-            <div class="cell">CELL</div>
-            <div class="cell">CELL</div>
-            <div class="cell">CELL</div>
-            <div class="cell">CELL</div>
-            <div class="cell two-cols col-position-first row-position-second">CELL</div>
-        </div>
+	<body>
+		<div class="Grid">
+			<div class="cell">CELL</div>
+			<div class="cell">CELL</div>
+			<div class="cell">CELL</div>
+			<div class="cell">CELL</div>
+			<div class="cell two-cols col-position-first row-position-second">CELL</div>
+		</div>
 
-        <div class="Grid grid-of-four">
-            <div class="cell">CELL</div>
-            <div class="cell">CELL</div>
-            <div class="cell two-cols two-rows">CELL</div>
-            <div class="cell">CELL</div>
-            <div class="cell">CELL</div>
-        </div>
-    </body>
+		<div class="Grid grid-of-four">
+			<div class="cell">CELL</div>
+			<div class="cell">CELL</div>
+			<div class="cell two-cols two-rows">CELL</div>
+			<div class="cell">CELL</div>
+			<div class="cell">CELL</div>
+		</div>
+
+		<script>
+			function randomColor() {
+				var randomNum = Date.now() / 1000000 % 1;
+				var hexNum = Math.floor(randomNum * 16777215).toString(16);
+
+				return "#" + hexNum + 'BF';
+			}
+
+			var cells = document.querySelectorAll('.cell');
+
+			Array.prototype.forEach.call(cells, function (cell, i) {
+				setTimeout(function () {
+					cell.style.backgroundColor = randomColor();
+				}, 90 * i);
+			});
+		</script>
+	</body>
 </html>

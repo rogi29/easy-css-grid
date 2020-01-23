@@ -1,17 +1,19 @@
 # Easy CSS Grid
-An easy-to-use CSS grid framework that is based on the `grid` CSS property and implemented using CSS Custom Properties.
-
+An easy-to-use CSS grid system that is based on the `grid` CSS property and implemented using `CSS Custom Properties`.
+The following is a simple example of the usage of `easy-css-grid`: [https://rogi29.github.io/easy-css-grid](https://rogi29.github.io/easy-css-grid)
 
 ## Install
+
 ### npm
-`npm install easy-css-grid`  
+`npm install easy-css-grid` 
 
 ### sass 
-Import into your sass using `@import '~easy-css-grid'`
 
+Import into your sass using `@import '~easy-css-grid'` 
 
 ## Properties
-```css
+
+``` css
 :root {
 	--Grid-width: 100%;
 	--Grid-gap: 1em;
@@ -57,11 +59,11 @@ Import into your sass using `@import '~easy-css-grid'`
 }
 ```
 
-
 ## Usage
-E.g. [https://rogi29.github.io/easy-css-grid](https://rogi29.github.io/easy-css-grid) :
 
-```css
+The following represents the code of the [example](https://rogi29.github.io/easy-css-grid) above:
+
+``` css
 :root {
 	--Grid-columns: 3;
 	--Grid-gap: 10px;
@@ -80,6 +82,7 @@ E.g. [https://rogi29.github.io/easy-css-grid](https://rogi29.github.io/easy-css-
 
 .Grid .cell {
 	background: #ddd;
+	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	line-height: 100px;
 }
@@ -100,7 +103,8 @@ E.g. [https://rogi29.github.io/easy-css-grid](https://rogi29.github.io/easy-css-
 	--row-position: 2;
 }
 ```
-```html
+
+``` html
 <div class="Grid">
 	<div class="cell">CELL</div>
 	<div class="cell">CELL</div>
@@ -119,4 +123,5 @@ E.g. [https://rogi29.github.io/easy-css-grid](https://rogi29.github.io/easy-css-
 ```
 
 ## Licence
+
 Code released under the [MIT License](LICENSE).

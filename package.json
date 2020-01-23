@@ -1,6 +1,6 @@
 {
 	"name": "easy-css-grid",
-	"version": "0.1.3",
+	"version": "1.0.0",
 	"description": "An easy-to-use CSS grid framework that is based on the `grid` CSS property and implemented using CSS Custom Properties.",
 	"main": "easy-css-grid.css",
 	"keywords": [
@@ -20,6 +20,12 @@
 		"easy css grid",
 		"style grid",
 		"display grid"
+	],
+	"files": [
+		"easy-css-grid.css",
+		"index.html",
+		"LICENSE",
+		"README.md"
 	],
 	"repository": {
 		"type": "git",
