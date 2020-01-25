@@ -65,19 +65,15 @@
 			<div class="cell">CELL</div>
 		</div>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.min.js"></script>
 		<script>
-			function randomColor() {
-				var randomNum = Date.now() / 1000000 % 1;
-				var hexNum = Math.floor(randomNum * 16777215).toString(16);
-
-				return "#" + hexNum + 'BF';
-			}
-
 			var cells = document.querySelectorAll('.cell');
 
 			Array.prototype.forEach.call(cells, function (cell, i) {
 				setTimeout(function () {
-					cell.style.backgroundColor = randomColor();
+					cell.style.backgroundColor = randomColor({
+						luminosity: 'light'
+					});
 				}, 90 * i);
 			});
 		</script>
