@@ -47,7 +47,7 @@ Import into your sass using `@import '~easy-css-grid'`
 	--row-gap: var(--gap, var(--Grid-row-gap));
 }
 
-.Grid .cell {
+.Grid > .cell {
 	--column-position: var(--Grid-column-position);
 	--column-span: var(--Grid-column-span);
 	--column-start: var(--column-position);
@@ -80,26 +80,26 @@ The following represents the code of the [example](https://rogi29.github.io/easy
 	--rows: 4;
 }
 
-.Grid .cell {
+.Grid > .cell {
 	background: #ddd;
 	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	line-height: 100px;
 }
 
-.Grid .cell.two-cols {
+.Grid > .cell.two-cols {
 	--column-span: 2;
 }
 
-.Grid .cell.two-rows {
+.Grid > .cell.two-rows {
 	--row-span: 2;
 }
 
-.Grid .cell.col-position-first {
+.Grid > .cell.col-position-first {
 	--column-position: 1;
 }
 
-.Grid .cell.row-position-second {
+.Grid > .cell.row-position-second {
 	--row-position: 2;
 }
 ```

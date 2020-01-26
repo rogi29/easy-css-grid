@@ -42,7 +42,7 @@
 	grid-auto-rows: var(--rows-auto);
 }
 
-.Grid .cell {
+.Grid > .cell {
 	/* Properties */
 	--column-position: var(--Grid-column-position);
 	--column-span: var(--Grid-column-span);

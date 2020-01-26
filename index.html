@@ -5,7 +5,7 @@
 		<title>Easy CSS Grid - Test</title>
 		<meta name="description" content="Easy CSS Grid">
 		<meta name="author" content="Gil Nimer">
-		<link rel="stylesheet" href="easy-css-grid.css?v=1.0.0">
+		<link rel="stylesheet" href="easy-css-grid.css?v=1.0.1">
 		<style>
 			:root {
 				--Grid-columns: 3;
@@ -23,26 +23,26 @@
 				--rows: 4;
 			}
 
-			.Grid .cell {
+			.Grid > .cell {
 				background: #ddd;
 				font-family: Arial, Helvetica, sans-serif;
 				text-align: center;
 				line-height: 100px;
 			}
 
-			.Grid .cell.two-cols {
+			.Grid > .cell.two-cols {
 				--column-span: 2;
 			}
 
-			.Grid .cell.two-rows {
+			.Grid > .cell.two-rows {
 				--row-span: 2;
 			}
 
-			.Grid .cell.col-position-first {
+			.Grid > .cell.col-position-first {
 				--column-position: 1;
 			}
 
-			.Grid .cell.row-position-second {
+			.Grid > .cell.row-position-second {
 				--row-position: 2;
 			}
 		</style>

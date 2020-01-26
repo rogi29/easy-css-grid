@@ -1,7 +1,7 @@
 {
 	"name": "easy-css-grid",
-	"version": "1.0.0",
-	"description": "An easy-to-use CSS grid framework that is based on the `grid` CSS property and implemented using CSS Custom Properties.",
+	"version": "1.0.1",
+	"description": "An easy-to-use CSS grid system that is based on the `grid` CSS property and implemented using `CSS Custom Properties`.",
 	"main": "easy-css-grid.css",
 	"keywords": [
 		"css",
